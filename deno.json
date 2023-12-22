@@ -1,0 +1,18 @@
+{
+  "importMap": "./import_map.json",
+  "compilerOptions": {
+    "strict": true
+  },
+
+  "lint": {
+    "rules": {
+      "tags": ["recommended"]
+    }
+  },
+
+  "tasks": {
+    "init": "clear && deno run --allow-all src/cmds/init.ts",
+    "test": "clear && deno run --allow-all src/cmds/run.ts example",
+    "solve": "clear && deno run --allow-all src/cmds/run.ts input"
+  }
+}
